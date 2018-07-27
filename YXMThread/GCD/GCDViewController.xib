@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GCDViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQe-Fg-O5j">
+                    <rect key="frame" x="0.0" y="141" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Knp-Xm-490"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="全局队列并，多个线程，每个线程同时执行任务，">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="click1:" destination="-1" eventType="touchUpInside" id="WWj-sx-Z9z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZK-kd-bZE">
+                    <rect key="frame" x="0.0" y="214" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bHD-fp-DN6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="自定义队列，创建一个线程，多个任务顺序执行任务">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="click2:" destination="-1" eventType="touchUpInside" id="W0j-Jv-wRj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqN-5i-Aah">
+                    <rect key="frame" x="0.0" y="290" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ezp-91-wg1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="自定义队列，创建多个线程，同时执行任务">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="click3:" destination="-1" eventType="touchUpInside" id="YYo-CE-XoN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsa-9a-ESL">
+                    <rect key="frame" x="0.0" y="370" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="cKZ-mF-eBf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="多任务并发执行，监听所有任务都结束后在操作1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="click4:" destination="-1" eventType="touchUpInside" id="U6m-oM-11v"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aED-TA-6ZR">
+                    <rect key="frame" x="0.0" y="433" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="L0l-0K-elj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="多任务并发执行，监听所有任务block都结束后在操作2">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="click5:" destination="-1" eventType="touchUpInside" id="wEo-tF-5zA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4D-JM-jJg">
+                    <rect key="frame" x="0.0" y="497" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="lZG-CK-ytB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="生命周期只执行一次">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="click6:" destination="-1" eventType="touchUpInside" id="GPR-xg-7br"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHK-Yn-2ow">
+                    <rect key="frame" x="0.0" y="545" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jsI-1S-3RG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="延时执行">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="click7:" destination="-1" eventType="touchUpInside" id="OCm-ja-zYv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XHK-Yn-2ow" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="5jz-GE-JTe"/>
+                <constraint firstItem="sqN-5i-Aah" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="9Di-I0-MRC"/>
+                <constraint firstItem="aED-TA-6ZR" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="B4y-JP-JqP"/>
+                <constraint firstItem="RZK-kd-bZE" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Fal-V8-y7w"/>
+                <constraint firstItem="Tsa-9a-ESL" firstAttribute="top" secondItem="sqN-5i-Aah" secondAttribute="bottom" constant="40" id="FcO-Lv-Ih7"/>
+                <constraint firstItem="aED-TA-6ZR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="HVi-gG-lMj"/>
+                <constraint firstItem="E4D-JM-jJg" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Lgo-ZC-HUC"/>
+                <constraint firstItem="E4D-JM-jJg" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="OQT-mp-Ump"/>
+                <constraint firstItem="sqN-5i-Aah" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Sy5-LV-ayk"/>
+                <constraint firstItem="xQe-Fg-O5j" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="VGV-nQ-XZW"/>
+                <constraint firstItem="xQe-Fg-O5j" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="121" id="YvZ-Tj-M53"/>
+                <constraint firstItem="XHK-Yn-2ow" firstAttribute="top" secondItem="E4D-JM-jJg" secondAttribute="bottom" constant="8" id="ZFj-em-2pa"/>
+                <constraint firstItem="aED-TA-6ZR" firstAttribute="top" secondItem="Tsa-9a-ESL" secondAttribute="bottom" constant="23" id="ZOT-FW-baD"/>
+                <constraint firstItem="E4D-JM-jJg" firstAttribute="top" secondItem="aED-TA-6ZR" secondAttribute="bottom" constant="24" id="fK9-rR-hhX"/>
+                <constraint firstItem="sqN-5i-Aah" firstAttribute="top" secondItem="RZK-kd-bZE" secondAttribute="bottom" constant="36" id="nBF-LP-nsG"/>
+                <constraint firstItem="RZK-kd-bZE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="nXi-ih-Cqp"/>
+                <constraint firstItem="xQe-Fg-O5j" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="rUx-Ps-mrG"/>
+                <constraint firstItem="RZK-kd-bZE" firstAttribute="top" secondItem="xQe-Fg-O5j" secondAttribute="bottom" constant="33" id="t99-7H-blR"/>
+                <constraint firstItem="Tsa-9a-ESL" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="tqH-W3-fCH"/>
+                <constraint firstItem="Tsa-9a-ESL" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="w0a-Xd-4KA"/>
+                <constraint firstItem="XHK-Yn-2ow" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="wMY-Qh-CpK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
